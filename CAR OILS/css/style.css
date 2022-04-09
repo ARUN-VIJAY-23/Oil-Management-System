@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  background-color: #eaeded;
+}
+.fullwidth {
+  background: url(/img/man-polishing-car-inside-car-service.jpg);
+  height: 30vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.fullwidth .profile {
+  position: absolute;
+  color: white;
+  display: flex;
+  left: 0;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.233);
+}
+.fullwidth .profile h1 {
+  display: inline;
+  width: 50%;
+  margin-left: 50px;
+}
+.fullwidth .profile .user {
+  width: 50%;
+  display: inline;
+  text-align: right;
+  margin-right: 50px;
+}
+.mainbody {
+  background-color: lavenderblush;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.details {
+  background-color: rgba(131, 123, 123, 0.39);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+.details h3 {
+  font-size: 1.2rem;
+}
+.details h4 {
+  font-size: 1rem;
+}
+.cartbody {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* ====== Media Query ===== */
+
+@media only screen and (max-width: 570px) {
+  .fullwidth .profile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+   .fullwidth .profile h1{
+       font-size: 1.5rem;
+       padding: 10px 0;
+    }
+    .fullwidth .profile .user{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}

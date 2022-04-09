@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: #444;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 10%;
+    background: rgb(227, 216, 216);
+    padding: 100px;
+}
+.number span{
+    padding: 50px;
+    background: red;
+    border-radius: 100%;
+}
+.number span::before{
+    content: '';
+    box-shadow: 5px 5px 2px green;
+    top: 0;
+    left: 0;
+    padding: 100px;
+}

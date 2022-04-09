@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Hello, world!</title>
+</head>
+
+<body style="background-color: #6ebeec2d;">
+    <nav class="navbar navbar-expand-md bg-success navbar-dark ">
+        <a class="navbar-brand" href="#">OIL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="adminhome.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="addnew.html">Add New</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="adminupdatedetails.html">Upadte Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Update Amount</a>
+                </li>
+                <li class="nav-item" data-toggle="modal" data-target="#exampleModalCenter">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container addnew">
+        <div class="card mt-5">
+            <div class="card-header text-center">
+                <h1><span class="firstlet">A</span>dd <span class="firstlet">N</span>ew <span class="firstlet">E</span>ntry</h1>
+            </div>
+            <div class="card-body">
+                <form action="" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="brandname">Brand Name</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="brandname" name="brandname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="modelname">Model Name</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="modelname" name="modelname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="manufacturedyear">Manufactured Year</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="manufacturedyear"
+                                        name="manufacturedyear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="fueltype">Fuel Type</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="fueltype" name="fueltype">
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="width: 100%;">
+                        <h3 style="width: 100%; text-align: center;margin-bottom: 30px;font-variant: small-caps;"><span class="firstlet">E</span>ngine
+                            <span class="firstlet">O</span>il</h3>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="engineoilcapacity">Capacity</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+
+                                        <input type="text" class="form-control" id="engineoilcapacity"
+                                            name="engineoilcapacity" aria-describedby="inputGroupPrepend2" required>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend2">Liters</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="engineoilgrade">Grade</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="engineoilgrade" name="engineoilgrade">
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="width: 100%;">
+                        <h3 style="width: 100%; text-align: center;margin-bottom: 30px;font-variant: small-caps;"><span class="firstlet">F</span>luids</h3>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="crownoil">Crown Oil</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="crownoil" name="crownoil">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="radiatorcoolant">Radiator Coolant</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="radiatorcoolant" name="radiatorcoolant">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="powersteeringfluid">Power Steering Fluid</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="powersteeringfluid"
+                                        name="powersteeringfluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="brakefluid">Brake Fluid</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="brakefluid" name="brakefluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="greases">Greases</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="greases" name="greases">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="cabinfilter">Cabin Filter</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="cabinfilter" name="cabinfilter">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="fuelfilter"> Fuel Filter</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="fuelfilter" name="fuelfilter">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="oilfilter">Oil Filter</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="oilfilter" name="oilfilter">
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="width: 100%;">
+                        <h3 style="width: 100%; text-align: center;margin-bottom: 30px;font-variant: small-caps;">
+                            <span class="firstlet">T</span>ransmission <span class="firstlet">O</span>il</h3>
+                        <div class="col-md-6 col-lg-4 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="transmanual">Manual</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="transmanual" name="transmanual"
+                                            aria-describedby="inputGroupPrepend2" required>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend2">Liters</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="transauto">Auto</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="transauto" name="transauto"
+                                            aria-describedby="inputGroupPrepend2" required>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend2">Liters</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="transgrade">Grade</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="transgrade" name="transgrade">
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="width: 100%;">
+                        <h3 style="width: 100%; text-align: center;margin-bottom: 30px;font-variant: small-caps;">
+                            <span class="firstlet">W</span>iper <span class="firstlet">B</span>lade <span class="firstlet">S</span>ize</h3>
+                        <div class="col-md-6 col-lg-4 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="wiperbladedriver">Driver </label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="wiperbladedriver"
+                                            name="wiperbladedriver" aria-describedby="inputGroupPrepend2" required>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend2">Inch</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="wiperbladepassengar">Passenger </label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="wiperbladepassengar"
+                                            name="wiperbladepassengar" aria-describedby="inputGroupPrepend2" required>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend2">Inch</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 py-2">
+                            <div class="row">
+                                <div class="col-md-4 text-left text-md-right">
+                                    <label for="wiperbladerear">Rear</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="wiperbladerear"
+                                            name="wiperbladerear" aria-describedby="inputGroupPrepend2" required>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend2">Inch</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center py-5">
+                            <button type="button" class="btn btn-outline-success">Save</button>
+                            <button type="reset" class="btn btn-outline-danger">Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Logout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are You Sure to Logout ?
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html"><button type="button" class="btn btn-info"><i
+                                class="fa-solid fa-check"></i>&nbsp;Yes</button></a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i
+                            class="fa-solid fa-xmark"></i>&nbsp;No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
