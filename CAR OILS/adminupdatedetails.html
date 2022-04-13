@@ -36,7 +36,7 @@
                     <a class="nav-link" href="adminupdatedetails.html">Upadte Details</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Update Amount</a>
+                    <a class="nav-link" href="adminupdateamount.html">Update Amount</a>
                 </li>
                 <li class="nav-item" data-toggle="modal" data-target="#exampleModalCenter">
                     <a class="nav-link" href="#">Logout</a>
@@ -73,24 +73,6 @@
             </div>
         </div>
     </div>
-    <style>
-        .tableoverflow #example thead tr th {
-            color: dodgerblue;
-            vertical-align: middle;
-            text-align: center;
-            padding: 10px 30px;
-            border: 1px solid black;
-            font-variant: small-caps;
-            font-size: 1.3em;
-        }
-
-        .tableoverflow {
-            max-width: 100%;
-            overflow-x: scroll !important;
-            overflow-y: scroll !important;
-            padding: 10px;
-        }
-    </style>
     <div class="container-fluid my-5 p-5 bg-light ">
         <div class="tableoverflow">
             <div class="">
@@ -129,7 +111,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tiger Nixon</td>
+                            <td>Tiger Nixon<button type="button" class="btn btn-outline-info" data-toggle="modal"
+                                data-target="#UpdateFormModal"><i
+                                    class="fa-solid fa-rotate"></i>&nbsp;Update</button>&nbsp;&nbsp;</td>
                             <td>System Architect</td>
                             <td>Edinburgh</td>
                             <td>61</td>
@@ -152,9 +136,9 @@
                             <td>$320,800</td>
                             <td>
                                 <div class="text-center d-flex px-5">
-                                    <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                                    <!-- <button type="button" class="btn btn-outline-info" data-toggle="modal"
                                         data-target="#UpdateFormModal"><i
-                                            class="fa-solid fa-rotate"></i>&nbsp;Update</button>&nbsp;&nbsp;
+                                            class="fa-solid fa-rotate"></i>&nbsp;Update</button>&nbsp;&nbsp; -->
                                     <button type="button" class="btn btn-outline-danger"><i
                                             class="fa-solid fa-trash-can"></i>&nbsp;Delete</button>
                                 </div>
@@ -226,8 +210,8 @@
     <!-- Modal -->
     <div class="modal fade" id="UpdateFormModal" tabindex="-1" role="dialog" aria-labelledby="UpdateFormModalTitle"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content ">
                 <div class="modal-header">
                     <h3 class="modal-title" id="UpdateFormModalTitle" style="font-variant: small-caps;"><span
                             style="color: rgb(15, 175, 238);">U</span>pdate <span

@@ -20,19 +20,58 @@
   margin: 0;
   box-shadow: 4px 4px 15px black;
 }
+/* ======= Table OverFlow ==== */
+.tableoverflow #example thead tr th {
+  color: dodgerblue;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 30px;
+  border: 1px solid black;
+  font-variant: small-caps;
+  font-size: 1.3em;
+}
+
+.tableoverflow {
+  max-width: 100%;
+  overflow-x: scroll !important;
+  overflow-y: scroll !important;
+  padding: 10px;
+}
 /* ====== add new first letter color ==== */
 
-.addnew span{
+.addnew span {
   color: blue;
   font-weight: 600;
 }
 .addnew h1,
-.updatedetail h2{
+.updatedetail h2 {
   font-variant: small-caps;
 }
-.updatedetail span{
+#UpdateFormModal span {
+  color: blue;
+  font-weight: 600;
+}
+.updatedetail span {
   color: darkorange;
 }
 span.firstlet {
   color: crimson;
+}
+#UpdateFormModal span.firstlet {
+  color: crimson;
+}
+#UpdateFormModal label {
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#UpdateFormModal label::first-letter {
+  color: blueviolet;
+}
+.centalign {
+  display: flex;
+  align-items: center !important;
+  width: 100%;
+  background: lightgreen;
+  
 }
